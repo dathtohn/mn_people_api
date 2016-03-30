@@ -11,17 +11,13 @@ module API
         render json: @people
       end
 
-      # GET /people/1
-      def show
-        render json: @person
-      end
-
       # POST /people
       def create
         @person = Person.new(person_params)
 
         if @person.save
-          render json: @person, status: :created, location: @person
+          @people = Person.all
+          render 'index', status: :created, location: api_v1_people_url
         else
           render json: @person.errors, status: :unprocessable_entity
         end
@@ -42,6 +38,7 @@ module API
       end
 
       private
+
         # Use callbacks to share common setup or constraints between actions.
         def set_person
           @person = Person.find(params[:id])
