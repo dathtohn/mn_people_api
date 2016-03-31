@@ -35,6 +35,9 @@ module API
       # DELETE /people/1
       def destroy
         @person.destroy
+
+        @people = Person.all
+        render 'index', status: :created, location: api_v1_people_url
       end
 
       private
