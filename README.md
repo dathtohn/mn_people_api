@@ -1,24 +1,15 @@
-## README
+# Mommy Nearest People API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Get started
+1. `bundle install`
+2. `rake db:migrate`
+3. `rails s`
 
-Things you may want to cover:
+After those steps, you should be able to connect to the server.
 
-* Ruby version
+### Tech
+- Rails 5.0.0.beta3
+- Ruby 2.3.0p0
 
-* System dependencies
+### Notes
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
