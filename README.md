@@ -12,4 +12,4 @@ After those steps, you should be able to connect to the server.
 - Ruby 2.3.0p0
 
 ### Notes
-
+Make sure you use the correct version of Ruby.
